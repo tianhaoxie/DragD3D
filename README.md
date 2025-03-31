@@ -5,5 +5,5 @@ Vertex-based Editing for Realistic Mesh Deformations using 2D Diffusion Priors
 
 [Project Page](http://tianhaoxie.github.io/project/DragD3D)
 
-![alt text](https://github.com/tianhaoxie/Drag3D/blob/main/assets/overview.png?raw=true)
+![alt text](https://github.com/tianhaoxie/DragD3D/blob/main/assets/overview.png?raw=true)
 
