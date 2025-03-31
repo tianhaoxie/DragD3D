@@ -24,21 +24,7 @@ from Adan import Adan
 
 import igl
 import wandb
-from arap_deformer import arap_deformer
 import  time as t
-
-class ARAP_loss(torch.autograd.Function):
-    @staticmethod
-    def forward(ctx, v, arap_obj):
-        arap_obj.compute_loss(v)
-        energy = arap_obj.get_energy()
-        ctx.in1 = arap_obj.get_J()
-        return torch.tensor([energy], device='cuda:0')
-
-    @staticmethod
-    def backward(ctx, grad_output):
-        grad = ctx.in1
-        return grad * grad_output, None, None
 
 
 def seed_everything(seed):
