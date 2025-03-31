@@ -1,0 +1,48 @@
+# Camera Parameters
+batch_size: 4
+train_res: 512
+layers: 2
+cam_dis: 3
+elev_angle: 15
+drag_azim: 0
+fov_min: 60.0            # Minimum camera field of view angle during renders
+fov_max: 60.0           # Maximum camera field of view angle during renders
+dist_min: 3.0           # Minimum distance of camera from mesh during renders
+dist_max: 5.0           # Maximum distance of camera from mesh during renders
+light_power: 5.0         # Light intensity
+elev_alpha: 1.0          # Alpha parameter for Beta distribution for elevation sampling
+elev_beta: 5.0           # Beta parameter for Beta distribution for elevation sampling
+elev_max: 90        # Maximum elevation angle
+azim_min: -180            # Minimum azimuth angle
+azim_max: 180         # Maximum azimuth angle
+aug_loc: false            # Offset mesh from center of image?
+aug_bkg: false            # Augment the background
+aug_light: false
+
+texture_resolution: 1024
+bsdf: pbr
+epochs: 2000
+lr: 0.005
+r_loss_alpha: 0.6
+r_loss_beta: 0.075
+c_loss_weight: 50
+
+#gan inversion
+max_pti_step: 400
+L2_lambda: 1
+pti_lr : 0.0003
+
+#sds
+text: "an armchair"
+negative: ""
+sd_version: "2.1"
+hf_key:
+negative_w: -2
+fp16: true
+vram_0: false
+azims: [[0],[90],[180],[-90]]
+t_range: [0.02,0.98]
+guidance_scale: 100
+lambda_guidance: 0.00002
+front_decay_factor: 2
+side_decay_factor: 10
