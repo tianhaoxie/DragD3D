@@ -7,3 +7,5 @@ Vertex-based Editing for Realistic Mesh Deformations using 2D Diffusion Priors
 
 ![alt text](https://github.com/tianhaoxie/DragD3D/blob/main/assets/overview.png?raw=true)
 
+The code is also dependent on [NVDiffrast](https://github.com/NVlabs/nvdiffrast) and [NVdiffmodeling](https://github.com/NVlabs/nvdiffmodeling).
+
